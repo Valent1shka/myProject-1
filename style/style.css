@@ -2,29 +2,94 @@
 
 body {
     font-family: Roboto Condensed;
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .container {
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0 15px;
 }
 
 header {
-    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    box-shadow: 0px 30px 25px -15px rgba(255, 255, 255, 0.1);
+}
+
+.header-inner {
     display: flex;
-    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+}
+
+.header-list-item {
+    font-size: 40px;
+}
+
+.logo {
+    margin-left: 80px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
 }
 
 ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    gap: 40px;
-    margin-left: 70px;
+    gap: 80px;
+    padding-left: 70px;
     font-weight: 700;
+    color: #fff;
 }
 
 .logo {
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
+}
+
+main {
+    margin-top: 130px;
+}
+
+.first-planet {
+    width: 450px;
+    height: 470px;
+}
+
+.second-planet,
+.third-planet,
+.fourth-planet {
+    width: 450px;
+    height: 450px;
+}
+
+.name-planet {
+    font-size: 50px;
+    font-weight: 800;
+    margin: 0 0 20px 0;
+
+}
+
+.description-planet {
+    font-weight: 400;
+    font-size: 35px;
+    margin: 0;
+}
+
+.main-list {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+}
+
+.card-planet {
+    display: flex;
+    align-items: center;
 }

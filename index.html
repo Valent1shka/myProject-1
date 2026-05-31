@@ -10,28 +10,107 @@
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
 
-    <div class="container">
-        <header>
-            <img class="logo" src="./images/pngwing.com.png" alt="logo">
+    <header>
+        <div class="container header-inner">
+            <img class="logo" src="./images/logo.png" alt="logo">
 
             <ul class="header-list">
-                <li class="header-list-item">Main</li>
-                <li class="header-list-item">Planets</li>
-                <li class="header-list-item">Stars</li>
+                <li class="header-list-item"><a class="header-link" href="">Main</a></li>
+                <li class="header-list-item"><a class="header-link" href="index.html#planets">Planets</a></li>
+                <li class="header-list-item"><a class="header-link" href="">Stars</a></li>
             </ul>
-        </header>
+        </div>
+    </header>
 
 
-        <main></main>
+    <main class="main">
+        <div id="planets">
+            <ul class="main-list ">
+                <li class="main-list-item ">
+                    <article class="card-planet animate__animated animate__bounceInUp animate__delay-2s">
+                        <img class="first-planet" src="./images/planets/first-planet.png" alt="Neptun">
+                        <div class="div-planet-text">
+                            <h3 class="name-planet">Neptun</h3>
+                            <p class="description-planet">Neptune is the farthest planet from our Sun, mesmerizing with
+                                its
+                                deep ultramarine color due to the presence of methane in its atmosphere. This ice giant
+                                has
+                                the fastest supersonic winds in the solar system, blowing at speeds of over two thousand
+                                kilometers per hour. In the depths of Neptune, the pressure and temperature are so
+                                extreme
+                                that carbon there turns into real diamonds, which constantly fall to the planet's core
+                                in
+                                the form of precious rains.</p>
+                        </div>
+                    </article>
+                </li>
+                <li class="main-list-item">
+                    <article class="card-planet animate__fadeInLeft" style="flex-direction: row-reverse;">
+                        <img class="second-planet" src="./images/planets/second-planet.png" alt="Venus">
+                        <div class="div-planet-text">
+                            <h3 class="name-planet">Venus</h3>
+                            <p class="description-planet">Venus is Earth's infernal twin, holding the title of the
+                                hottest
+                                planet in our solar system. This is due to a dense layer of carbon dioxide, which
+                                creates a
+                                devastating greenhouse effect and heats the surface to four hundred and sixty degrees
+                                Celsius.
+                                Its sky constantly rains caustic sulfuric acid, and the pressure on its surface is
+                                ninety
+                                times
+                                that of Earth, making this world one of the most brutal in our cosmic neighborhood.</p>
+                        </div>
+                    </article>
+                </li>
+                <li class="main-list-item">
+                    <article class="card-planet animate__fadeInRight">
+                        <img class="third-planet" src="./images/planets/third-planet.png" alt="Saturn">
+                        <div class="div-planet-text">
+                            <h3 class="name-planet">Saturn</h3>
+                            <p class="description-planet">Saturn is known as a majestic gas giant and the recognized
+                                owner
+                                of
+                                the brightest ring system, consisting of billions of particles of ice and cosmic dust.
+                                This
+                                planet has an amazingly low density, as it is composed mainly of hydrogen and helium.
+                                Because of
+                                this feature, if there were a giant ocean in space where Saturn could be lowered, this
+                                huge
+                                striped disk would simply float on its surface like a light ball.</p>
+                        </div>
+                    </article>
+                </li>
+                <li class="main-list-item">
+                    <article class="card-planet animate__fadeInLeft" style="flex-direction: row-reverse;">
+                        <img class="fourth-planet" src="./images/planets/fourth-planet.png" alt="Jupiter">
+                        <div class="div-planet-text">
+                            <h3 class="name-planet">Jupiter</h3>
+                            <p class="description-planet">Jupiter is the Earth's greatest planetary protector, weighing
+                                twice as
+                                much as all the other planets in our system combined. On its surface, the Great Red Spot
+                                rages -
+                                a giant hurricane larger than Earth and has not subsided for several centuries. Thanks
+                                to
+                                its
+                                colossal mass and powerful gravity, this giant works as a real cosmic shield,
+                                intercepting
+                                and
+                                destroying dangerous comets and asteroids.</p>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </div>
+    </main>
 
-
-        <footer></footer>
-    </div>
+    <footer></footer>
 
     <script src="./js/script.js" type="module"></script>
 </body>
